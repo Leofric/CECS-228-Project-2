@@ -79,7 +79,7 @@ public:
      */
    static int daysInMonth(int m, int y);
     /*
-     preconditions:
+     preconditions: none
      postconditions:
      */
     bool operator==(const myDate &a);
