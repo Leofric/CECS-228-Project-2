@@ -73,15 +73,9 @@ public:
      postconditions: calculates positive or negative value
      */
     void convertToGregorian(int x);
-    /*
-     preconditions: 
-     postconditions:
-     */
+  
    static int daysInMonth(int m, int y);
-    /*
-     preconditions: none
-     postconditions:
-     */
+ 
     bool operator==(const myDate &a);
     bool operator!=(const myDate &a);
     bool operator<(const myDate &a);
