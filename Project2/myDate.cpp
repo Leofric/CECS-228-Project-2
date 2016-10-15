@@ -33,7 +33,7 @@ myDate::myDate(int m, int d, int y){
     }
 }
 
-//formats the output
+//edited display fucntion, to work with student/cstring object for project 3
 void myDate::display(char a[]){
     char f[20];
     switch (month) {
@@ -79,6 +79,51 @@ void myDate::display(char a[]){
     strcat(f , day);
     strcpy(a, f);
 }
+
+//Original display function to work with project 2
+void myDate::displayReg(){
+    std::string print;
+    switch (month) {
+        case 1:
+            print = "January";
+            break;
+        case 2:
+            print = "Febuary";
+            break;
+        case 3:
+            print = "March";
+            break;
+        case 4:
+            print = "April";
+            break;
+        case 5:
+            print = "May";
+            break;
+        case 6:
+            print = "June";
+            break;
+        case 7:
+            print = "July";
+            break;
+        case 8:
+            print = "August";
+            break;
+        case 9:
+            print = "September";
+            break;
+        case 10:
+            print = "October";
+            break;
+        case 11:
+            print = "November";
+            break;
+        case 12:
+            print = "December";
+            break;
+    }
+    std::cout<<print<<" "<<day<<", "<<year<<std::endl;
+}
+
 
 //changes the date by +n number of days
 void myDate::incrDate(int n){

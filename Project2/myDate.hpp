@@ -27,6 +27,9 @@ public:
      preconditions: none
      postconditions: displays the character array
      */
+    
+    void displayReg();
+    
     void incrDate(int n);
     /*
      preconditions: none

@@ -48,7 +48,7 @@
         myDate testDate;
         cout << "\n****** Testing default constructor ********" << endl;
         cout << "The Date should display May 11, 1959 -> ";
-        testDate.display();
+        testDate.displayReg();
         cout << " - is it?\n\n";
     }
     
@@ -57,11 +57,11 @@
 								//passed in through the parameter list represented by Month, Day and Year.
         cout << "\n****** Testing overloaded constructor ********" << endl;
         cout << "The Date should display February 29, 2016 -> ";
-        testDate.display(); cout << " - is it?\n\n";
+        testDate.displayReg(); cout << " - is it?\n\n";
         
         testDate= myDate( 2, 29, 2015);
         cout << "The Date should display May 11, 1959 -> ";
-        testDate.display(); cout << " - is it?\n\n";
+        testDate.displayReg(); cout << " - is it?\n\n";
         
     }
     
@@ -72,7 +72,7 @@
         
         cout << "\n****** Testing increment and decrement method ********" << endl;
         cout << "The Date should display February 29, 2012 -> ";
-        testDate.display(); cout << " - is it?\n\n";
+        testDate.displayReg(); cout << " - is it?\n\n";
         
         testDate.incrDate(365);
         testDate.incrDate(371);
@@ -81,7 +81,7 @@
         
         
         cout << "The Date should display February 29, 2016 -> ";
-        testDate.display(); cout << " - is it?\n\n";
+        testDate.displayReg(); cout << " - is it?\n\n";
         
     }
     
@@ -101,9 +101,9 @@
         
         cout << "\n****** Testing getMonth, getDay, and getYear ********" << endl;
         cout << "The Date should display ";
-        testDate.display();
+        testDate.displayReg();
         cout << " -> ";
-        testDate2.display();
+        testDate2.displayReg();
         cout << " - is it?\n\n";
         
     }
@@ -128,15 +128,15 @@
         
         cout << "\n****** Testing additional bad dates ********" << endl;
         cout << "The Date should display May 11, 1959 -> ";
-        badD1.display();
+        badD1.displayReg();
         cout << " - is it?\n\n";
         
         cout << "The Date should display May 11, 1959 -> ";
-        badD2.display();
+        badD2.displayReg();
         cout << " - is it?\n\n";
         
         cout << "The Date should display May 11, 1959 -> ";
-        badD3.display();
+        badD3.displayReg();
         cout << " - is it?\n\n";
     }
 
